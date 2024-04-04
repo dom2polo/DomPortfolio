@@ -1,0 +1,201 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #eaf6fc; /* Light blue background */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #007BFF; /* Light blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* styles.css */
+.project-image {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* SLIDER FOR PROJECTS PREVIEW */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%; /* Adjust the width of each slide */
+    height: 300px; /* Set a fixed height for all slides */
+    overflow: hidden; /* Ensure images don't overflow */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: relative; /* Ensure slide content is positioned relative to the slide */
+}
+
+
+/* Default styles */
+.slide img {
+    max-width: 100%; /* Ensure image does not exceed parent width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default spacing */
+    margin: auto; /* Center the image horizontally */
+}
+
+/* Responsive styles for smaller devices */
+@media screen and (max-width: 768px) {
+    .slide {
+        max-width: 100%; /* Adjust image width for smaller screens */
+    }
+}
+
+/* Responsive styles for larger devices */
+@media screen and (min-width: 769px) {
+    .slide {
+        max-width: 100%; /* Adjust image width for larger screens */
+    }
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.5s;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.slider-container .prev,
+.slider-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.slider-container .prev {
+    left: 10px;
+}
+
+.slider-container .next {
+    right: 10px;
+}
+
+/* CONTACT SECTION */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.contact-grid > div {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.resume {
+    margin-top: 20px;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume img {
+    max-width: 100%;
+    height: auto;
+}
+
+.resume-links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .resume-content {
+        flex-direction: column;
+    }
+}
+
+
+
+.contact-info h2 {
+    display: none; /* Hide the section title */
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+}
+
+.contact-link i {
+    margin-right: 5px;
+}
+
+.resume {
+    grid-column: span 2; /* Expand to fill the entire width */
+    text-align: center;
+}
+
+.resume img {
+    width: 500; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+
+

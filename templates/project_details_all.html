@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects Details</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <h2>All Projects Details</h2>
+    </nav>
+
+    <ul>
+        {% for project in projects %}
+            <li>
+                <h3>{{ project.title }}</h3>
+                <img class="project-image" src="{{ url_for('static', filename=project.image) }}" alt="{{ project.title }} Image">
+                <p>{{ project.overview }}</p>
+                <p><strong>Tools:</strong> {{ ', '.join(project.tools) }}</p>
+                {% if project.link %}
+                    <p><a href="{{ project.link }}">Link</a></p>
+                {% endif %}
+                {% if project.pdf %}
+                    <p><a href="{{ url_for('static', filename=project.pdf) }}">PDF</a></p>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

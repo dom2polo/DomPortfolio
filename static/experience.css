@@ -1,0 +1,90 @@
+/* experience_styles.css */
+
+/* experience.css */
+
+nav {
+    margin-bottom: 20px; /* Adjust margin bottom as needed */
+}
+
+nav a {
+    color: #007BFF; /* Light blue color for links */
+    text-decoration: none;
+    margin-right: 20px; /* Adjust margin right as needed */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav h2 {
+    color: #333; /* Color for h2 */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #eaf6fc; /* Light blue background */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #007BFF; /* Light blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#work-experience {
+    margin-top: 30px; /* Adjust margin top as needed */
+}
+
+#work-experience h2 {
+    color: #007BFF; /* Light blue color for section title */
+}
+
+#work-experience li {
+    border: 1px solid #ddd; /* Gray border for each work experience */
+}
+
+#work-experience li ul {
+    margin-top: 10px; /* Adjust margin top as needed */
+}
+
+#work-experience li ul li {
+    margin-top: 5px; /* Adjust margin top as needed */
+}
+
+a[href="projects.html"], a[href="projects_detail.html"] {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF; /* Light blue color for links */
+}
+
+a[href="projects.html"]:hover, a[href="projects_detail.html"]:hover {
+    text-decoration: underline;
+}
